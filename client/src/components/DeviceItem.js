@@ -19,7 +19,6 @@ const DeviceItem = ({ device }) => {
           src={process.env.REACT_APP_API_URL + device.img}
         />
         <div className="text-black-50 mt-1 d-flex justify-content-between">
-          <div>Samsung...</div>
           <div className="d-flex align-items-center">
             <div>{device.rating}</div>
             <FaStar style={{ width: "13px" }} color="gray" />
