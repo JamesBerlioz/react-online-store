@@ -17,7 +17,8 @@ const App = observer(() => {
         user.setUser(true);
         user.setIsAuth(true);
       })
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(false))
+      .catch((e)=>console.log(e));
   }, []);
 
   if (loading) {
